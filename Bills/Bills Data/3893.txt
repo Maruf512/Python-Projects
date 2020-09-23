@@ -1,0 +1,18 @@
+	Next Fashion Textile
+
+ Bill Number : 3893
+ Buyir Name : Maruf Ahmed
+ Phone Number : 01626820988
+======================================
+ Products     QTY    S.Price    Price
+======================================
+ Vomshawl Pl		25	250	6250
+ Vomshawl D		8	250	2000
+ Jhilmil PL		3	250	750
+ Jants Shawl PL		6	250	1500
+ Maflar D		13	120	1560
+ Maflar PL		20	120	2400
+ Orna 1		12	100	1200
+--------------------------------------
+ Total Bill : 			 Tk: 15660.0
+--------------------------------------
