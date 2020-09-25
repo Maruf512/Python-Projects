@@ -20,7 +20,7 @@ def search():
         driver.find_element_by_id("search-icon-legacy").click()
         sleep(1)
         driver.find_element_by_xpath('//*[@id="video-title"]/yt-formatted-string').click()
-        driver.minimize_window()
+        driver.maximize_window()
         x = enter.get()
         y = Label(root, text=x, font=("Times", 10, "italic"))
         y.pack()
@@ -36,10 +36,10 @@ def exit():
         return
 
 def mute_btn():
-    driver.find_element_by_xpath('//*[@id="movie_player"]/div[28]/div[2]/div[1]/span/button').click()
+    driver.find_element_by_xpath('//*[@id="movie_player"]/div[28]/div[2]/div[1]/span[4]/button').click()
 
 def playbtn():
-    driver.find_element_by_xpath('//*[@id="movie_player"]/div[28]/div[2]/div[1]/button').click()
+    driver.find_element_by_xpath('//*[@id="movie_player"]/div[28]/div[2]/div[1]/span[2]/button').click()
 
 b = Label(root, text="Youtube Automation", fg="red", font=("Times", 18, "bold"))
 b.pack()
