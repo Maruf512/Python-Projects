@@ -36,10 +36,10 @@ def exit():
         return
 
 def mute_btn():
-    driver.find_element_by_xpath('//*[@id="movie_player"]/div[28]/div[2]/div[1]/span[4]/button').click()
+    driver.find_element_by_xpath('/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[4]/div[1]/div/div[1]/div/div/div/ytd-player/div/div/div[32]/div[2]/div[1]/span[4]/button').click()
 
 def playbtn():
-    driver.find_element_by_xpath('//*[@id="movie_player"]/div[28]/div[2]/div[1]/span[2]/button').click()
+    driver.find_element_by_xpath('/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[4]/div[1]/div/div[1]/div/div/div/ytd-player/div/div/div[32]/div[2]/div[1]/span[2]/button').click()
 
 b = Label(root, text="Youtube Automation", fg="red", font=("Times", 18, "bold"))
 b.pack()
