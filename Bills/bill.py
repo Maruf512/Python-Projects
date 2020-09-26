@@ -8,7 +8,7 @@ class Bill_App:
         self.root.title("Billing App")
         bg_color="#A28089"
         title=Label(self.root,text="Next Fashion Textile",bd=12,fg="white",relief=GROOVE,bg=bg_color,font=("times new roman",25,"bold"),pady=2).pack(fill=X)
-        
+
         #==================================Variables=================================#
         #================Shawl====================#
         self.product_1=IntVar()
@@ -49,14 +49,14 @@ class Bill_App:
         self.p_s_price=IntVar()
         self.p_m_price=IntVar()
         self.p_o_price=IntVar()
-        
+
         #==================Customer Detail Frame=====================#
         F1=LabelFrame(self.root,bd=10,relief=GROOVE,text="Customer Details",font=("times new roman",15,"bold"),fg="gold",bg=bg_color)
         F1.place(x=0,y=80,relwidth=1)
 
         cname_lbl=Label(F1,text="Name",bg=bg_color,fg="white",font=("times new roman",18,"bold")).grid(row=0,column=0,padx=20,pady=5)
         cname_text=Entry(F1,width=15,textvariable=self.c_name,font="arial 15",bd=3,relief=SUNKEN).grid(row=0,column=1,padx=10,pady=5)
-        
+
         cphone_lbl=Label(F1,text="Phone No.",bg=bg_color,fg="white",font=("times new roman",18,"bold")).grid(row=0,column=2,padx=20,pady=5)
         cphone_text=Entry(F1,width=25,textvariable=self.c_phone,font="arial 15",bd=3,relief=SUNKEN).grid(row=0,column=3,padx=10,pady=5)
 
@@ -195,7 +195,7 @@ class Bill_App:
                             )
         x=self.total_shawl_price
         self.shawl_price.set("Tk : "+str(x))
-        
+
 
 
         self.m_p7_p=self.product_7.get()*m_price
@@ -236,7 +236,7 @@ class Bill_App:
 
         self.Total_bill =float(x+y+z)
         self.Total_bill=(str(self.Total_bill))
-    
+
     def welcome_bill(self):
         self.txtarea.delete('1.0',END)
         self.txtarea.insert(END,"\tNext Fashion Textile\n")
@@ -255,7 +255,7 @@ class Bill_App:
             messagebox.showerror("Error","Product or Price is not selected.")
 
         else:
-            
+
             #=========Shawl========#
             self.welcome_bill()
             if self.product_1.get()!=0:
@@ -274,7 +274,7 @@ class Bill_App:
                 self.txtarea.insert(END,f"\n Jants Shawl PL\t\t{self.product_5.get()}\t{self.p_s_price.get()}\t{self.s_p5_p}")
 
             if self.product_6.get()!=0:
-                self.txtarea.insert(END,f"\n Jants Shawl D\t\t{self.product_6.get()}\t{self.p_s_price.get()}\t{self.s_p6_p}")                
+                self.txtarea.insert(END,f"\n Jants Shawl D\t\t{self.product_6.get()}\t{self.p_s_price.get()}\t{self.s_p6_p}")
 
     #=========Maflar========#
             if self.product_7.get()!=0:
@@ -293,7 +293,7 @@ class Bill_App:
                 self.txtarea.insert(END,f"\n Maflar 3\t\t{self.product_11.get()}\t{self.p_m_price.get()}\t{self.m_p11_p}")
 
             if self.product_12.get()!=0:
-                self.txtarea.insert(END,f"\n Maflar 4\t\t{self.product_12.get()}\t{self.p_m_price.get()}\t{self.m_p12_p}")                
+                self.txtarea.insert(END,f"\n Maflar 4\t\t{self.product_12.get()}\t{self.p_m_price.get()}\t{self.m_p12_p}")
 
     #=========Orna========#
             if self.product_13.get()!=0:
@@ -312,7 +312,7 @@ class Bill_App:
                 self.txtarea.insert(END,f"\n Orna 5\t\t{self.product_17.get()}\t{self.p_o_price.get()}\t{self.o_p17_p}")
 
             if self.product_18.get()!=0:
-                self.txtarea.insert(END,f"\n Orna 6\t\t{self.product_18.get()}\t{self.p_o_price.get()}\t{self.o_p18_p}")                
+                self.txtarea.insert(END,f"\n Orna 6\t\t{self.product_18.get()}\t{self.p_o_price.get()}\t{self.o_p18_p}")
 
             self.txtarea.insert(END,f"\n--------------------------------------")
             self.txtarea.insert(END,f"\n Total Bill : \t\t\t Tk: {self.Total_bill}")
