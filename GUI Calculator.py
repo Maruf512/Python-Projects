@@ -3,7 +3,7 @@ from PIL import ImageTk, Image
 
 root = Tk()
 root.title("Calculator")
-root.iconbitmap('D:\Documents\ICON\Dtafalonso-Android-Lollipop-Calculator.ico')
+root.iconbitmap("D:/Documents/Python-Projects/Calculator/Dtafalonso-Android-Lollipop-Calculator.ico")
 
 # entry
 display = Entry(root, width=45, borderwidth=5)
@@ -111,4 +111,4 @@ button_de.grid(row=2, column=0)
 button_cl.grid(row=2, column=1, columnspan=3)
 button_eq.grid(row=6, column=1, columnspan=3)
 
-mainLoop = mainloop()
+root.mainloop()
