@@ -11,7 +11,7 @@ root.iconbitmap('Graphics-Vibe-Neon-Glow-Social-Youtube.ico')
 root.geometry("400x250")
 # History Bar
 
-frame_s = LabelFrame(root,bd=3,relief=GROOVE,text="History Bar",font=("Times",11,"italic"))
+frame_s = LabelFrame(root,bd=3,relief=GROOVE,text="History",font=("Times",11,"italic"))
 frame_s.place(x=10,y=140,width=380,height=103)
 
 # Chrome driver Location
